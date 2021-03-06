@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>クイズアプリ</title>
+  </head>
+  <body>
+    <div>
+      <!-- ↓クイズのタイトルをh2の中に書こう↓ -->
+      <h1>世界の平均寿命はどれでしょう？</h1>
+      <p>先進国と途上国を合わせています！</p>
+      <!-- ↓<img>タグを使って画像を表示しよう↓ -->
+      <img
+        src="img/81e.jpg"
+        alt=""
+        width="530px"
+        height="350px"
+      />
+      <div>
+        <button type="button" class="btn btn-primary" id="ques1">80歳</button>
+        <button type="button" class="ms-3 btn btn-primary" id="ques2">70歳</button>
+        <button type="button" class="ms-3 btn btn-primary" id="ques3">60歳</button>
+        <button type="button" class="ms-3 btn btn-primary" id="ques4">50歳</button>
+        <!-- それぞれid="choice-1",id="choice-2",id="choice-3"を持つ<button></button>タグを記述 -->
+      </div>
+      <!-- ↓id="feedback"を持つ<div></div>を記述↓ -->
+      <div id="feedback"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
